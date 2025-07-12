@@ -1,9 +1,7 @@
 export const Navbar = () => {
     return (
         <div>
-            <Router>
-                <NavLink to=""></NavLink>
-            </Router>
+            <h1>Avsar Air_Force</h1>
         </div>
     )
 }
