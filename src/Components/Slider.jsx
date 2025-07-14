@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import styled from "styled-components"
 
+import { FaArrowAltCircleLeft, FaArrowAltCircleRight } from "react-icons/fa";
+
 const images = [
     "/Slider_Images/slider1.jpg",
     "/Slider_Images/slider2.jpg",
@@ -12,20 +14,20 @@ const images = [
 ]
 
 const SliderDivTrack = styled.div`
-display:flex;
-flex-direction:row;
-width:7*40%;
-overflow-x:hidden;
+// display:flex;
+// flex-direction:row;
+// width:7*40%;
+// overflow-x:hidden;
 `
 
 const SliderDiv = styled.div`
 width:100%;
-height:40%;
+height:35%;
 display:flex;
 align-items:center;
 `
 const SliderImage = styled.img`
-width:40%;
+width:35%;
 height:100%;
 `
 export const Slider = () => {
@@ -65,8 +67,8 @@ export const Slider = () => {
 
             </SliderDiv >
         </SliderDivTrack>
-        <button onClick={handleLeftIndex}>left</button>
-        <button onClick={handleRightIndex}>right</button>
+        <button onClick={handleLeftIndex}><FaArrowAltCircleLeft /></button>
+        <button onClick={handleRightIndex}><FaArrowAltCircleRight /> </button>
     </>
     )
 }
